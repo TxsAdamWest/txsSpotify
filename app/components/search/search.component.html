@@ -1,9 +1,11 @@
 <h1>Need music?</h1>
 
 <p class="lead">You can use txsSpotify app to browse new releases and find your favorite songs.  Go ahead and search for that song that's stuck in your head. </p>
-
+<!-- Somethings wrong with the below input's [(ngModel)] attribute... perhaps a missed import somewhere?  -->
 <form>
 	<div class="form-group">
-		<input type="text" name="searchStr" class="form-control" (keyup)="searchMusic()" placeholder="Search for music..." >
+		<input type="text" name="searchStr" class="form-control"
+
+		(keyup)="searchMusic()" placeholder="Search for music..." >
 	</div>
 </form>

@@ -3,6 +3,7 @@ import { NavbarComponent } from './components/navbar/navbar.component/'
 import { ROUTER_DIRECTIVES } from '@angular/router'
 import { AboutComponent } from './components/about/about.component/'
 import { SearchComponent } from './components/search/search.component/'
+import { NgModule }      from '@angular/core';
 
 @Component({
     moduleId: module.id,
