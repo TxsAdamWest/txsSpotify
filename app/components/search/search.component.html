@@ -4,8 +4,6 @@
 <!-- Somethings wrong with the below input's [(ngModel)] attribute... perhaps a missed import somewhere?  -->
 <form>
 	<div class="form-group">
-		<input type="text" name="searchStr" class="form-control"
-
-		(keyup)="searchMusic()" ngModel="searchStr" placeholder="Search for music..." >
+		<input type="text" name="searchStr" (keyup)="searchMusic()" class="form-control" placeholder="Search for music..." />
 	</div>
 </form>
