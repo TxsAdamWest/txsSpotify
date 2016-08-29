@@ -16,7 +16,7 @@ export class SearchComponent {
 	// }
 
 	searchMusic(){
-		console.log("test!")
+		console.log(this.searchStr)
 		// this._spotifyService.searchMusic(this.searchStr)
 		// 	.subscribe(res => {
 		// 		console.log(res.artists.items)
