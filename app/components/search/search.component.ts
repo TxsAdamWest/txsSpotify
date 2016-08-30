@@ -1,9 +1,15 @@
 import {Component} from '@angular/core';
 
 //This NgModule is a test.
-import { NgModule } from '@angular/core';
+// import { NgModule } from '@angular/core';
 
 import { SpotifyService } from '../../services/spotify.service';
+
+//These are test imports.
+// import { NgModule }       from '@angular/core';
+// import { BrowserModule  } from '@angular/platform-browser';
+// import { AppComponent }   from '../../app.component';
+
 
 
 @Component({
@@ -12,6 +18,12 @@ import { SpotifyService } from '../../services/spotify.service';
     templateUrl: 'search.component.html',
     providers: [SpotifyService]
 })
+
+// @NgModule({
+//     declarations: [AppComponent],
+//     imports:      [BrowserModule],
+//     bootstrap:    [AppComponent],
+// })
 
 
 export class SearchComponent {

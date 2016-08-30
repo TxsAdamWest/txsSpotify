@@ -1,17 +1,20 @@
 import {Component} from '@angular/core';
-import {NavbarComponent} from './components/navbar/navbar.component/';
 import {ROUTER_DIRECTIVES} from '@angular/router';
+import {NavbarComponent} from './components/navbar/navbar.component/';
 import {SearchComponent} from './components/search/search.component/';
 import {AboutComponent} from './components/about/about.component/';
 
+//Also testing router refactor.
+// import {appRouterProviders} from './app.routes/'
+
 //This is a test.
-import { BrowserModule } from '@angular/platform-browser';
+// import { BrowserModule } from '@angular/platform-browser';
 
 
 // This import might not be needed here.
-import { NgModule } from '@angular/core';
+// import { NgModule } from '@angular/core';
 
-console.log(NgModule)
+// console.log(NgModule)
 
 @Component({
     moduleId: module.id,
@@ -22,10 +25,10 @@ console.log(NgModule)
 })
 
 // This is a test.
-@NgModule({
-  imports: [ BrowserModule , SearchComponent, AboutComponent],
-  declarations: [ AppComponent , SearchComponent, AboutComponent],
-  bootstrap:    [ AppComponent ]
-})
+// @NgModule({
+//   imports: [ BrowserModule , appRouterPro],
+//   declarations: [ SearchComponent, AboutComponent],
+//   bootstrap:    [ AppComponent ]
+// })
 
 export class AppComponent { }
