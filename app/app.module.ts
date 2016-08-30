@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
 
 //Testing Route pathing.  
-import { SearchComponent } from './components/search/search.component'
-import { AboutComponent } from './components/about/about.component'
+// import { SearchComponent } from './components/search/search.component'
+// import { AboutComponent } from './components/about/about.component'
 
 
 @NgModule({

@@ -1,3 +1,4 @@
+//RC5 Import Method
 // import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 // import { AppModule } from './app.module';
@@ -5,11 +6,16 @@
 
 // platformBrowserDynamic().bootstrapModule(AppModule);
 
+//RC4 Import Method
+import {bootstrap} from '@angular/platform-browser-dynamic'
+import {appRouterProviders} from './app.routes'
+import {AppComponent} from './app.component'
+import {disableDeprecatedForms, provideForms} from '@angular/forms'
 
-import { bootstrap } from '@angular/platform-browser-dynamic'
-import { appRouterProviders } from './app.routes'
-import { AppComponent } from './app.component'
-
-bootstrap(AppComponent, [appRouterProviders])
+bootstrap(AppComponent, [
+	appRouterProviders,
+	disableDeprecatedForms(),
+	provideForms()
+	]);
 
 

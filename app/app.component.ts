@@ -22,7 +22,8 @@ import {HTTP_PROVIDERS} from '@angular/http'
     selector: 'my-app',
     templateUrl: 'app.component.html',
     directives:[ROUTER_DIRECTIVES, NavbarComponent],
-    entryComponents:[SearchComponent, AboutComponent]
+    entryComponents:[SearchComponent, AboutComponent],
+    providers: [HTTP_PROVIDERS]
 })
 
 // This is a test.
