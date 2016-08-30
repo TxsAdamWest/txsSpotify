@@ -27,6 +27,7 @@ import { SpotifyService } from '../../services/spotify.service';
 
 
 export class SearchComponent {
+	//NgModel isn't working properly, for now I cannot access this value.
 	searchStr: string;
 
 	// constructor(private, _spotifyService:SpotifyService){
