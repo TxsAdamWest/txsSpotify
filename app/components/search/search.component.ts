@@ -30,9 +30,9 @@ export class SearchComponent {
 	//NgModel isn't working properly, for now I cannot access this value.
 	searchStr: string;
 
-	// constructor(private, _spotifyService:SpotifyService){
+	constructor(private _spotifyService:SpotifyService){ // Here we inject our SpotifyService.
 
-	// }
+	}
 
 	searchMusic(){
 		console.log(this.searchStr)

@@ -11,7 +11,7 @@ export class SpotifyService{ // Inside here we will make our api request.
 	}
 
 	searchMusic(str: string, type='artist') {// It will then get passed in here as an input to searchMusic() where it will be concatenated into our search Url.
-		this.searchUrl = 'https://api.spotify.com/search?query=' + str + '&offset=0&limit=20&type=' + type + '&market=US';
+		this.searchUrl = 'https://api.spotify.com/search?query=' + str + '&offset=0&limit=20&type=' + type + '&market=US'; //Following the url structure as listed in spotify's api docs.
 		return this._http.get(this.searchUrl)//_http.get() will fetch our data with the searchUrl we've created.
 			.map(res => res.json())// Then map our results into an array.
 	}
