@@ -5,18 +5,6 @@ import {SearchComponent} from './components/search/search.component/';
 import {AboutComponent} from './components/about/about.component/';
 import {HTTP_PROVIDERS} from '@angular/http'
 
-//Also testing router refactor.
-// import {appRouterProviders} from './app.routes/'
-
-//This is a test.
-// import { BrowserModule } from '@angular/platform-browser';
-
-
-// This import might not be needed here.
-// import { NgModule } from '@angular/core';
-
-// console.log(NgModule)
-
 @Component({
     moduleId: module.id,
     selector: 'my-app',
@@ -26,11 +14,5 @@ import {HTTP_PROVIDERS} from '@angular/http'
     providers: [HTTP_PROVIDERS]
 })
 
-// This is a test.
-// @NgModule({
-//   imports: [ BrowserModule , appRouterPro],
-//   declarations: [ SearchComponent, AboutComponent],
-//   bootstrap:    [ AppComponent ]
-// })
 
 export class AppComponent { }
