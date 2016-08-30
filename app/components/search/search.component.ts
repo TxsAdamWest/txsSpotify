@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
-import { SpotifyService } from '../../services/spotify.service'
+import {Component} from '@angular/core';
+
+//This NgModule is a test.
+import { NgModule } from '@angular/core';
+
+import { SpotifyService } from '../../services/spotify.service';
+
 
 @Component({
 	moduleId: module.id,
@@ -7,6 +12,7 @@ import { SpotifyService } from '../../services/spotify.service'
     templateUrl: 'search.component.html',
     providers: [SpotifyService]
 })
+
 
 export class SearchComponent {
 	searchStr: string;
@@ -17,6 +23,7 @@ export class SearchComponent {
 
 	searchMusic(){
 		console.log(this.searchStr)
+		console.log("Test!")
 		// this._spotifyService.searchMusic(this.searchStr)
 		// 	.subscribe(res => {
 		// 		console.log(res.artists.items)
