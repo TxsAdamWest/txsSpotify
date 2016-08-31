@@ -21,6 +21,12 @@ export class AlbumComponent {
 
 	}
 
+	msConverter(duration) {
+  		var minutes = Math.floor(duration / 60000);
+  		var seconds = ((duration % 60000) / 1000).toFixed(0);
+  		return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
+	}
+
 	ngOnInit(){
 		this._route.params
 			.map(params => params['id'])
@@ -28,6 +34,7 @@ export class AlbumComponent {
 				this._spotifyService.getAlbum(id) // Calls for our Artist by id after the string has been built .
 					.subscribe(album => {
 						this.album = album;
+						console.log(this.album);
 					})
 
 			})
