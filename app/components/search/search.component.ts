@@ -1,12 +1,6 @@
 import {Component} from '@angular/core';
 import { SpotifyService } from '../../services/spotify.service';
 
-//These are test imports.
-// import { NgModule }       from '@angular/core';
-// import { BrowserModule  } from '@angular/platform-browser';
-// import { AppComponent }   from '../../app.component';
-
-
 @Component({
 	moduleId: module.id,
     selector: 'search',
@@ -15,8 +9,9 @@ import { SpotifyService } from '../../services/spotify.service';
 })
 
 export class SearchComponent {
-	//NgModel isn't working properly, for now I cannot access this value.
-	searchStr: string;
+	searchStr: string; //Accesses our input's value.
+	searchRes: Artist[];
+
 
 	constructor(private _spotifyService:SpotifyService){ // Here we inject our SpotifyService.
 
@@ -27,7 +22,7 @@ export class SearchComponent {
 		// console.log("Test!")
 		this._spotifyService.searchMusic(this.searchStr)
 			.subscribe(res => {
-				console.log(res.artists.items)
+				this.searchRes.artists.items
 			})
 	}
  }
