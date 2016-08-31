@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map'; // Also require observable, so we will import th
 @Injectable()
 export class SpotifyService{ // Inside here we will make our api request.
 	private searchUrl: string; // This is where we collect our search string as the user is typing.
-	private artistUrl: string;
+	private artistUrl: string; // String collected from artist object from searchArtist()
 
 	constructor(private _http:Http) {
 
@@ -17,8 +17,8 @@ export class SpotifyService{ // Inside here we will make our api request.
 			.map(res => res.json())// Then map our results into an array.
 	}
 
-	searchArtist(id: string, type='artist') {// The id from our artist object from searchArtist() where it will be concatenated into our artist Url.
-		this.searchUrl = 'https://api.spotify.com/v1/artists/' + id;
+	getArtist(id: string) {// The id from our artist object from searchArtist() where it will be concatenated into our artist Url.
+		this.artistUrl = 'https://api.spotify.com/v1/artists/' + id;
 		return this._http.get(this.artistUrl)//_http.get() will fetch our data with the artistUrl we've created.
 			.map(res => res.json())// Again, maps results into an array.
 	}
