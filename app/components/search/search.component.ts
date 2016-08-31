@@ -24,10 +24,10 @@ export class SearchComponent {
 
 	searchMusic(){
 		console.log(this.searchStr)
-		console.log("Test!")
-	// 	this._spotifyService.searchMusic(this.searchStr)
-	// 		.subscribe(res => {
-	// 			console.log(res.artists.items)
-	// 		})
-	// }
+		// console.log("Test!")
+		this._spotifyService.searchMusic(this.searchStr)
+			.subscribe(res => {
+				console.log(res.artists.items)
+			})
+	}
  }
