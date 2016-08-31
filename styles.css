@@ -13,7 +13,8 @@
 
 .artist-thumb{
 	width: 80px;
-	height: auto;
+	/* Height originally left at auto, changing to 80px for better scaling. */
+	height: 80px; 
 	float: left;
 	margin-right: 10px;
 }
