@@ -7,9 +7,9 @@ import {appRouterProviders} from './app.routes'
 
 
 @NgModule({
-  imports: [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent ],
-  bootstrap: [ AppComponent ],
-  providers: appRouterProviders // Importing providers fixed RC4 -> RC5 migration bugs.
+  imports: [BrowserModule, FormsModule] ,
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  providers: [appRouterProviders] // Importing providers fixed RC4 -> RC5 migration bugs.
 })
 export class AppModule { }
