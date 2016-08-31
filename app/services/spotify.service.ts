@@ -7,6 +7,8 @@ export class SpotifyService{ // Inside here we will make our api request.
 	private searchUrl: string; // This is where we collect our search string as the user is typing.
 	private artistUrl: string; // String collected from artist object from searchArtist()
 	private albumsUrl: string; // From artist object under albums.
+	private albumUrl: string; // For single album view.
+
 
 	constructor(private _http:Http) {
 
@@ -24,9 +26,15 @@ export class SpotifyService{ // Inside here we will make our api request.
 			.map(res => res.json())// Again, maps results into an array.
 	}
 
-	getAlbums(artistId: string) {// The albumId from our artist object where it will be concatenated into our albumUrl.
+	getAlbums(artistId: string) {// The albumId from our artist object where it will be concatenated into our albumsUrl.
 		this.albumsUrl = 'https://api.spotify.com/v1/artists/' + artistId + "/albums"
 		return this._http.get(this.albumsUrl)//fetch album data with albumUrl we've created.
-			.map(res => res.json())// Array mappin'.
+			.map(res => res.json())// More Array mappin'.
+	}
+
+	getAlbum(albumId: string) {// Pull single album id.
+		this.albumUrl = 'https://api.spotify.com/v1/albums/' + albumId
+		return this._http.get(this.albumUrl)//fetch single album data with albumUrl we've created.
+			.map(res => res.json())// More Array mappin'.
 	}
 }
