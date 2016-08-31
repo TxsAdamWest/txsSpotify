@@ -27,9 +27,14 @@ export class ArtistComponent implements OnInit{
 		this._route.params
 			.map(params => params['id'])
 			.subscribe((id) => {
-				this._spotifyService.getArtist(id) // This will make the call for our Artist by id , again after the string has been built .
+				this._spotifyService.getArtist(id) // Calls for our Artist by id after the string has been built .
 					.subscribe(artist => {
 						this.artist = artist;
+					})
+
+				this._spotifyService.getAlbums(id) // Calls for our Artist's album by id , again after the string has been built .
+					.subscribe(albums => {
+						this.albums = albums.items;
 					})
 			})
 	}
