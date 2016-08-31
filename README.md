@@ -1,4 +1,4 @@
-![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/album.png)
+![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/albums.png)
 
 ![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/search.png)
 
