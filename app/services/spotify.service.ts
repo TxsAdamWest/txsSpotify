@@ -32,8 +32,8 @@ export class SpotifyService{ // Inside here we will make our api request.
 			.map(res => res.json())// More Array mappin'.
 	}
 
-	getAlbum(albumId: string) {// Pull single album id.
-		this.albumUrl = 'https://api.spotify.com/v1/albums/' + albumId
+	getAlbum(id: string) {// Pull single album id.
+		this.albumUrl = 'https://api.spotify.com/v1/albums/' + id;
 		return this._http.get(this.albumUrl)//fetch single album data with albumUrl we've created.
 			.map(res => res.json())// More Array mappin'.
 	}
