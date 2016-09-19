@@ -19,9 +19,7 @@ export class ArtistComponent implements OnInit{
 
 	constructor(
 		private _spotifyService:SpotifyService,
-		private _route:ActivatedRoute){
-
-	}
+		private _route:ActivatedRoute){}
 
 	ngOnInit(){
 		this._route.params

@@ -19,13 +19,13 @@ export class AlbumComponent {
 		private _spotifyService:SpotifyService,
 		private _route:ActivatedRoute){
 
-	}
+	},
 
 	msConverter(duration) { // Needed to convert time from ms to MM:SS format.
   		var minutes = Math.floor(duration / 60000);
   		var seconds = ((duration % 60000) / 1000).toFixed(0);
   		return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
-	}
+	},
 
 	ngOnInit(){
 		this._route.params
