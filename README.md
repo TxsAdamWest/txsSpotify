@@ -1,8 +1,8 @@
-![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/album.PNG)
+![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/albums.png)
 
-![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/search.PNG)
+![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/search.png)
 
-![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/tracks.PNG)
+![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/tracks.png)
 
-![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/about.PNG)
+![Picture](https://github.com/TxsAdamWest/txsSpotify/blob/master/images/about.png)
 
